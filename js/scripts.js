@@ -1,21 +1,21 @@
 // Business Logic
-var counter = function(inputNumber) {
+var counter = function(input) {
   debugger;
   var numList = [];
-  for (var index = 0; index <= inputNumber; index++)
+  for (var index = 0; index <= input; index++)
     numList.push(index);
-    var string = numList.toString().split("");
-    return string;
+    var stringArray = numList.toString().split("");
+    return stringArray;
 }
 
-var translator = function(string) {
+var translate = function(input) {
   var newString = [];
-  for (var i = 0; i <= string.length; i++) {
-    if (i === "1") {
+  for (var i = 0; i <= input.length; i++) {
+    if (i === 1) {
       string[i] = "boop";
-    } else if (i === "0") {
+    } else if (i === 0) {
       string[i] = "beep";
-    } else (i % 3 === "0") {
+    } else if ((i % 3) === 0) {
       string[i] = "Sorry";
     }
       newString.push(i);
@@ -34,9 +34,9 @@ $(document).ready(function() {
     event.preventDefault();
     var inputNum = parseInt($("input#inputNumber").val());
 
-    var result = translator(counter(inputNum));
+    var result = translate(counter(inputNum));
 
 
-    $("#listarea").empty().text(finalResult);
+    $("#listarea").empty().text(result);
   });
 });
