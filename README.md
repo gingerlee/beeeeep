@@ -6,17 +6,12 @@
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This form should allow the user to input a number and output a list of numbers up to the input, and also change all 1s, 0s, and 3s, to words. It is currently not working but will be under investigation over the weekend, and hopfully up then._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Copy this link into the browser of your choice:_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
 
 ## Project Specifications
 
@@ -29,15 +24,15 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_This is currently not working. I have a debugger installed at the top to see that I am able to create an array of string items counting up to the input number, but from there I am not able to manipulate or display it...yet. _
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_Questions? Contact Ginger at kretschmons@gmail.com_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_This application uses HTML, CSS, and javaScript. It also leverages the Bootstrap and jQuey libraries._
 
 ### License
 

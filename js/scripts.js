@@ -1,6 +1,5 @@
 // Business Logic
 var counter = function(input) {
-  debugger;
   var numList = [];
   for (var index = 0; index <= input; index++)
     numList.push(index);
@@ -12,16 +11,35 @@ var translate = function(input) {
   var newString = [];
   for (var i = 0; i <= input.length; i++) {
     if (i === 1) {
-      string[i] = "boop";
+      input[i] = "boop";
     } else if (i === 0) {
-      string[i] = "beep";
+      input[i] = "beep";
     } else if ((i % 3) === 0) {
-      string[i] = "Sorry";
+      input[i] = "Sorry";
     }
-      newString.push(i);
-      return newString;
+    newString.push(i);
+    return newString;
   }
 }
+// var counter = function(input) {
+//   var numList = [];
+//   for (var index = 0; index <= input; index++)
+//   numList.push(index);
+//   var stringArray = numList.toString().split("");
+//
+//   var newString = [];
+//   for (var i = 0; i <= stringArray.length; i++) {
+//     if (i === 1) {
+//       input[i] = "boop";
+//     } else if (i === 0) {
+//       input[i] = "beep";
+//     } else if ((i % 3) === 0) {
+//       input[i] = "Sorry";
+//     }
+//     newString.push(i);
+//     return newString;
+//   }
+// }
 
 
 // User Interface Logic
