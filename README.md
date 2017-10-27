@@ -1,4 +1,4 @@
-# _Beep-Boop Number Translator_
+# Beep-Boop Number Translator
 
 #### _This application will take a number input from the user, and output an array of numbers up to that input number with a exceptions of translated numbers to "beep" and "boop", October, 27, 2017_
 
@@ -24,7 +24,7 @@ _This form should allow the user to input a number and output a list of numbers 
 
 ## Known Bugs
 
-_This is currently not working. I have a debugger installed at the top to see that I am able to create an array of string items counting up to the input number, but from there I am not able to manipulate or display it...yet. _
+_This is currently not working. I have a debugger installed at the top to see that I am able to create an array of string items counting up to the input number, but from there I am not able to manipulate or display it...yet._
 
 ## Support and contact details
 
@@ -32,8 +32,8 @@ _Questions? Contact Ginger at kretschmons@gmail.com_
 
 ## Technologies Used
 
-_This application uses HTML, CSS, and javaScript. It also leverages the Bootstrap and jQuey libraries._
+This application uses HTML, CSS, and javaScript. It also leverages the Bootstrap and jQuey libraries.
 
 ### License
 
-*Copyright (c) 2017 **_{List of contributors or company name}_***
+*Copyright (c) 2017 **_{Ginger Lee Kretschmer}_***
