@@ -1,17 +1,28 @@
 // Business Logic
-var counter = function(input) {
+var counter = function(inputNumber) {
   var numList = [];
-  for (var index = 0; index <= input; index++)
+  for (var index = 0; index <= inputNumber; index++)
     numList.push(index);
-    return numList;
+    var string = numList.toString().split("");
+    return string;
 }
-// if (index % 3 === 0) {
-//   numList[index] = "Sorry";
-// } else if (index === 1) {
-//   numList[index] = "boop";
-// } else (index === 0) {
-//   numList[index] = "beep";
-// }
+
+
+var translator = function(string) {
+  var newString = [];
+  for (var i = 0; i <= string.length; i++) {
+    if (i % 3 === 0) {
+      string[i] = "Sorry";
+    } else if (i === 1) {
+      string[i] = "boop";
+    } else if (i === 0) {
+      string[i] = "beep";
+    }
+    newString.push(i);
+    return newString;
+  }
+}
+
 
 
 
@@ -25,9 +36,13 @@ $(document).ready(function() {
   $("form#translator").submit(function(event) {
     event.preventDefault();
     var inputNum = parseInt($("input#inputNumber").val());
-    var result = counter(inputNum)
+    console.log(inputNum);
+    var firstResult = counter(inputNum);
+    console.log(firstResult);
+    var finalResult = translator(firstResult);
+    console.log(finalResult);
 
 
-    $("#listarea").empty().append(result)
+    $("#listarea").empty().append(finalResult)
   });
 });
