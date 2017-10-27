@@ -10,7 +10,7 @@ _This form should allow the user to input a number and output a list of numbers 
 
 ## Setup/Installation Requirements
 
-* _Copy this link into the browser of your choice:_
+* _Copy this link into the browser of your choice: https://gingerlee.github.io/beeeeep/_
 
 
 ## Project Specifications
@@ -20,7 +20,7 @@ _This form should allow the user to input a number and output a list of numbers 
 | Input Number will output an array up to that number| 4    | 1,2,3,4  |
 | Numbers that contain 1 will output as "beep"       | 1    | "beep"   |
 | Numbers that contain 1 will output as "boop"       | 0    | "boop"   |
-| Numbers that divide by 3 will output "I'm sorry, Dave. I'm afraid I can't do that."       | 6    | "I'm sorry, Dave. I'm afraid I can't do that."   |
+| Numbers that divide by 3 will output "sorry"       | 6    | "sorry"   |
 
 ## Known Bugs
 
