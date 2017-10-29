@@ -1,60 +1,35 @@
 // Business Logic
-var counter = function(input) {
-  var numList = [];
-  for (var index = 0; index <= input; index++)
-    numList.push(index);
-    var stringArray = numList.toString().split("");
-    return stringArray;
-}
 
-var translate = function(input) {
-  var newString = [];
-  for (var i = 0; i <= input.length; i++) {
-    if (i === 1) {
-      input[i] = "boop";
-    } else if (i === 0) {
-      input[i] = "beep";
-    } else if ((i % 3) === 0) {
-      input[i] = "Sorry";
-    }
-    newString.push(i);
-    return newString;
+var beeper = function(input) {
+  if (isNaN(input) === true || input < 1) {
+    return alert("Please enter a number.");
   }
-}
-// var counter = function(input) {
-//   var numList = [];
-//   for (var index = 0; index <= input; index++)
-//   numList.push(index);
-//   var stringArray = numList.toString().split("");
-//
-//   var newString = [];
-//   for (var i = 0; i <= stringArray.length; i++) {
-//     if (i === 1) {
-//       input[i] = "boop";
-//     } else if (i === 0) {
-//       input[i] = "beep";
-//     } else if ((i % 3) === 0) {
-//       input[i] = "Sorry";
-//     }
-//     newString.push(i);
-//     return newString;
-//   }
-// }
 
+  var output = [];
+  for (var index = 1; index <= input; index ++) {
+    if ((index % 3) === 0) {
+      output.push("I'm sorry Dave, I'm afraid I can't do that.");
+    } else if (index.toString().match(/0/g)) {
+      output.push("Beep");
+    } else if (index.toString().match(/1/g)) {
+      output.push("Boop");
+    } else {
+      output.push(index);
+    }
+  }
+  return output;
+};
 
 // User Interface Logic
 $(document).ready(function() {
   $(".jumbotron a").click(function() {
-    $(".survey").show();
+    $(".beeps").show();
   });
 
-  $("form#translator").submit(function(event) {
+  $("form#beep").submit(function(event) {
     event.preventDefault();
-    var inputNum = parseInt($("input#inputNumber").val());
+    var input = parseInt($("#input").val());
 
-    var result = translate(counter(inputNum));
-
-
-    $("#listarea").empty().text(result);
+    $("#listarea").empty().text(beeper(input));
   });
 });
