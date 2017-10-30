@@ -22,7 +22,7 @@ var beeper = function(input) {
 
 // User Interface Logic
 $(document).ready(function() {
-  $(".jumbotron a").click(function() {
+  $("button").click(function() {
     $(".beeps").show();
   });
 

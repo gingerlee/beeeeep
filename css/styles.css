@@ -1,6 +1,3 @@
-body {
-  font-family: 'Pacifico', cursive;
-}
 
 .beeps {
   display: none;
@@ -8,9 +5,12 @@ body {
 
 .jumbotron {
   width: 100%;
-  background-image:url('../img/leaves.jpg');
-  float: left;
+  background-image: url("../img/metal.jpg");
   color: #fff;
+}
+
+.jumbotron button {
+  margin: 15% 45%;
 }
 
 hr {
