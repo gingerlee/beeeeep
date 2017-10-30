@@ -6,7 +6,7 @@
 
 ## Description
 
-_This form should allow the user to input a number and output a list of numbers up to the input, and also change all "0"s into "beep", all "1"s into "boop",and 3s, to specific words ("beep"). It is currently not working but will be under investigation over the weekend, and hopfully up then._
+_This app will take a user input number and then output a list of numbers up to the input number, and also change all "0"s into "beep", all "1"s into "boop", and 3s into a sentence._
 
 ## Setup/Installation Requirements
 
