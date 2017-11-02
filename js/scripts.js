@@ -5,19 +5,19 @@ var beeper = function(input) {
     return alert("Please enter a number.");
   }
   var output = [];
-  for (index = 0; index >= input; index++)
-  if ((index % 12) === 0) {
-    output.push("latte");
-  } else if ((index % 3) === 0) {
-    output.push("pumpkin");
-  }  else if ((index % 4) === 0) {
-    output.push("spice");
-  } else {
-    output.push(index);
+  for (var index = 0; index <= input; index++) {
     debugger;
+    if ((index % 12) === 0) {
+      output.push("latte");
+    } else if ((index % 3) === 0) {
+      output.push("pumpkin");
+    } else if ((index % 4) === 0) {
+      output.push("spice");
+    } else {
+      output.push(index);
+    }
+    return output;
   }
-  return output;
-
 };
 
 // User Interface Logic
