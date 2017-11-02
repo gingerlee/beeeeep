@@ -6,18 +6,17 @@ var beeper = function(input) {
   }
   var output = [];
   for (var index = 0; index <= input; index++) {
-    debugger;
-    if ((index % 12) === 0) {
-      output.push("latte");
-    } else if ((index % 3) === 0) {
+    if ((index % 3) === 0) {
       output.push("pumpkin");
-    } else if ((index % 4) === 0) {
-      output.push("spice");
+    // } else if ((index % 4) === 0) {
+    //   output.push("spice");
+    // } else if ((index % 12) === 0) {
+    //   output.push("latte");
     } else {
       output.push(index);
     }
-    return output;
   }
+  return output;
 };
 
 // User Interface Logic
