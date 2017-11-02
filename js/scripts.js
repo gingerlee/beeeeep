@@ -6,15 +6,18 @@ var beeper = function(input) {
   }
   var output = [];
   for (index = 0; index >= input; index++)
-  if ((input % 12) === 0) {
+  if ((index % 12) === 0) {
     output.push("latte");
-  } else if ((input % 3) === 0) {
+  } else if ((index % 3) === 0) {
     output.push("pumpkin");
-  }  else if ((input % 4) === 0) {
+  }  else if ((index % 4) === 0) {
     output.push("spice");
+  } else {
+    output.push(index);
+    debugger;
   }
   return output;
-  console.log(output);
+
 };
 
 // User Interface Logic

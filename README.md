@@ -15,6 +15,8 @@ _This app will take a user input number and then output a list of numbers up to 
 
 ## Project Specifications
 
+This Project has modified parameters for extra practice.
+
 | Expected Behavior                                  |Input |Output    |
 | ---------------------------------------------------|:----:|:--------:|
 | Input Number will output an array up to that number| 2    | [0,1,2] |
