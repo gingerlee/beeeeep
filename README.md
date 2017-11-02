@@ -19,7 +19,7 @@ This Project has modified parameters for extra practice.
 
 | Expected Behavior                                  |Input |Output    |
 | ---------------------------------------------------|:----:|:--------:|
-| Input Number will output an array up to that number| 2    | [0,1,2] |
+| Input Number will output an array up to that number| 2    | [1,2] |
 | Any number divisible by 3 should be replaced with "pumpkin". | 3 | ["pumpkin"]   |
 | Any number divisible by 4 should be replaced with "spice". | 4 | ["spice"]   |
 | Any number divisible by 12 should be replaced with "latte". | 12 | ["latte"]   |
