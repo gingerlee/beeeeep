@@ -17,10 +17,10 @@ _This app will take a user input number and then output a list of numbers up to 
 
 | Expected Behavior                                  |Input |Output    |
 | ---------------------------------------------------|:----:|:--------:|
-| Input Number will output an array up to that number| 4    | 1,2,3,4  |
-| Numbers that contain 0 will output as "Beep"       | 0    | "Beep"   |
-| Numbers that contain 1 will output as "Boop"       | 1    | "Boop"   |
-| Numbers that divide by 3 will output "I'm sorry Dave, I'm afraid I can't do that."       | 6    | "I'm sorry Dave, I'm afraid I can't do that."   |
+| Input Number will output an array up to that number| 2    | [0,1,2] |
+| Any number divisible by 3 should be replaced with "pumpkin". | 3 | ["pumpkin"]   |
+| Any number divisible by 4 should be replaced with "spice". | 4 | ["spice"]   |
+| Any number divisible by 12 should be replaced with "latte". | 12 | ["latte"]   |
 
 
 ## Support and contact details
